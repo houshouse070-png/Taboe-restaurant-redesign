@@ -91,3 +91,23 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+  // Contact form demonstration
+  const contactForm = document.querySelector("#concept-contact-form");
+  const formFeedback = document.querySelector("#form-feedback");
+
+  if (contactForm && formFeedback) {
+    contactForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      if (!contactForm.checkValidity()) {
+        contactForm.reportValidity();
+        return;
+      }
+
+      formFeedback.textContent =
+        "Bedankt! Dit is een demo: je bericht is niet echt verzonden.";
+
+      contactForm.reset();
+    });
+  }
