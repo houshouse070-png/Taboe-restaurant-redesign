@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contact | Taboe Redesign Concept</title>
+
+  <meta
+    name="description"
+    content="Een contactpagina als onderdeel van een onafhankelijk website-redesignconcept voor Taboe Bar & Keuken."
+  >
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+  <div class="demo-notice">
+    Independent redesign concept · Not the official Taboe website
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">taboe<span>.</span></a>
+
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-label="Open navigation"
+      aria-expanded="false"
+      aria-controls="main-navigation"
+    >
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="main-navigation" id="main-navigation">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="over-ons.html">Over ons</a>
+      <a href="contact.html">Contact</a>
+      <a class="nav-cta" href="contact.html">Ontdek Taboe ↗</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="contact-hero">
+      <p class="eyebrow">WE HOREN GRAAG VAN JE</p>
+      <h1>Even <span>kennismaken?</span></h1>
+
+      <p>
+        Een vraag, een idee of gewoon benieuwd? Deze contactpagina
+        laat zien hoe een duidelijke en uitnodigende contactervaring
+        eruit kan zien.
+      </p>
+
+      <p class="concept-note">
+        Dit is een onafhankelijk redesignconcept. De contactgegevens
+        en het formulier zijn demonstratie-elementen, geen bevestigde
+        officiële contactkanalen.
+      </p>
+    </section>
+
+    <section class="contact-layout">
+
+      <div class="contact-info">
+        <p class="eyebrow">HOUD HET PERSOONLIJK</p>
+        <h2>Een goed gesprek begint hier.</h2>
+
+        <p>
+          In een definitieve website kunnen hier de gecontroleerde
+          adresgegevens, openingstijden, telefoonnummer en officiële
+          contactmogelijkheden van het restaurant worden geplaatst.
+        </p>
+
+        <div class="contact-detail">
+          <span class="contact-icon">↗</span>
+          <div>
+            <h3>Bezoek</h3>
+            <p>Officieel adres toevoegen na verificatie.</p>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <span class="contact-icon">✉</span>
+          <div>
+            <h3>E-mail</h3>
+            <p>Officieel e-mailadres toevoegen na verificatie.</p>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <span class="contact-icon">◷</span>
+          <div>
+            <h3>Openingstijden</h3>
+            <p>Actuele openingstijden toevoegen na verificatie.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-card">
+        <p class="eyebrow">STUUR EEN BERICHT</p>
+        <h2>Wat wil je ons vertellen?</h2>
+
+        <form id="concept-contact-form">
+
+          <label for="contact-name">Je naam</label>
+          <input
+            type="text"
+            id="contact-name"
+            name="name"
+            placeholder="Voornaam"
+            autocomplete="name"
+            required
+          >
+
+          <label for="contact-email">Je e-mailadres</label>
+          <input
+            type="email"
+            id="contact-email"
+            name="email"
+            placeholder="naam@voorbeeld.nl"
+            autocomplete="email"
+            required
+          >
+
+          <label for="contact-subject">Onderwerp</label>
+          <select id="contact-subject" name="subject" required>
+            <option value="">Kies een onderwerp</option>
+            <option value="vraag">Algemene vraag</option>
+            <option value="samenwerken">Samenwerken</option>
+            <option value="anders">Anders</option>
+          </select>
+
+          <label for="contact-message">Je bericht</label>
+          <textarea
+            id="contact-message"
+            name="message"
+            rows="5"
+            placeholder="Typ hier je bericht..."
+            required
+          ></textarea>
+
+          <button class="button-dark" type="submit">
+            Bekijk voorbeeldverzending ↗
+          </button>
+
+          <p class="form-note">
+            Demo: dit formulier verstuurt geen e-mail. Het laat alleen
+            zien hoe een formulier op de website kan werken.
+          </p>
+
+          <p id="form-feedback" class="form-feedback" role="status"></p>
+
+        </form>
+      </div>
+
+    </section>
+
+    <section class="contact-bottom-cta">
+      <p class="eyebrow">ONTDEK MEER</p>
+      <h2>Neem rustig een kijkje.</h2>
+      <a class="button-dark" href="menu.html">Bekijk het menuconcept ↗</a>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="index.html">
+      taboe<span>.</span>
+    </a>
+
+    <p>
+      Onafhankelijk website-redesignconcept.
+      Niet de officiële website van Taboe Bar & Keuken.
+    </p>
+
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="over-ons.html">Over ons</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </footer>
+
+</body>
+</html>
